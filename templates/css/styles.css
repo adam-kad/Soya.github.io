@@ -26,7 +26,7 @@ body {
 .logo {
     max-width: 150px;
     height: 100%;
-    margin: 0px 20px;
+    margin: 0px 50px;
 }
 
 .logo_text {
@@ -66,6 +66,9 @@ body {
     color: #000000;
 }
 
+.nav_menu_mob {
+    display: none;
+}
 
 
 /* ТЕЛО САЙТА MAIN */
@@ -214,6 +217,51 @@ body {
 .discount {
     color: #6eca6e;
 }
+.mpc_button_mob {
+    display: none;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    width: 200px;
+    height: 35px;
+    color: #9a9a9a;
+    background: #FCECDD;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mpc_button_mob:hover {
+    color: #ffffff;
+    background: #494949;
+    border: 1px solid #FCECDD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mpc_button_green_mob {
+    display: none;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    width: 200px;
+    height: 35px;
+    color: #9a9a9a;
+    background: #E0FBE2;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mpc_button_green_mob:hover {
+    color: #ffffff;
+    background: #494949;
+    border: 1px solid #FCECDD;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* БЛОК 1 */
 
@@ -225,6 +273,16 @@ body {
 .slide_block {
     display: flex;
 }
+
+.main_preview_content_right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    margin: 75px 50px 75px 0px;
+}
+
 
 /* БЛОК 2 */
 
@@ -334,10 +392,11 @@ body {
 }
 
 .footer_content {
+    margin-left: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px;
     height: auto;
 }
 
@@ -345,7 +404,7 @@ body {
     display: block;
     position: relative;
     margin: 10px 0px;
-    width: 500px;
+    max-width: 500px;
     height: auto;
     font-family: 'Russo One';
     font-style: normal;
@@ -377,4 +436,213 @@ body {
 }
 .telegram_link:hover {
     border-bottom: 1px solid #6A6A6A;
+}
+
+/* РАЗРЕШЕНИЕ НА 1000px */
+@media (max-width: 1000px) {
+    .main_preview_content {
+        width: 400px;
+    }
+    
+    .main_preview {
+        height: 500px;
+    }
+    
+    .mpc_text {
+        width: 400px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .mpc_desc {
+        width: 400px;
+    }
+}
+
+
+/* РАЗРЕШЕНИЕ НА 800px */
+
+@media (max-width: 800px) {
+    .main_block_1, .main_block_2, .main_block_3 {
+        height: 500px;
+    }
+
+    .main_preview_content {
+        width: 400px;
+    }
+    
+    .main_preview {
+        height: 400px;
+    }
+    
+    .mpc_text {
+        width: 300px;
+        font-size: 25px;
+        line-height: 28px;
+    }
+    
+    .mpc_desc {
+        width: 300px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .mpc_button {
+        margin-top: 5px;
+    }
+
+    .advert_preview_content {
+        width: 200px;
+    }
+
+    .apc_text {
+        width: 200px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .apc_discount {
+        font-size: 25px;
+        padding: 5px 0px;
+    }
+    .advert_percent {
+        padding: 5px 0px 0px;
+        font-size: 35px;
+    }
+    .apc_desc_text {
+        font-size: 18px;
+        padding: 1px 0px;
+    }
+
+    .fc_text {
+        width: 300px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .fc_desc {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 5px 0px;
+    }
+}
+
+
+/* РАЗРЕШЕНИЕ НА 750px */
+
+@media (max-width: 750px) {
+    .mp_image {
+        margin-top: 50px;
+    }
+}
+
+/* РАЗРЕШЕНИЕ НА 650px */
+
+@media (max-width: 650px) {
+    .main_preview {
+        flex-direction: column;
+        height: 650px;
+    }
+    .main_block_1, .main_block_2, .main_block_3 {
+        height: 750px;
+    }
+
+    .preview_image {
+        max-width: 200px;
+        height: auto;
+        margin: 50px auto;
+    }
+    .main_preview_image {
+        max-width: 200px;
+        height: auto;
+        margin: 30px auto;
+    }
+    .mp_image {
+        margin-top: 0px;
+    }
+    .main_preview_content {
+        margin: 75px auto 20px;
+    }
+    .mpc_text {
+        margin: auto;
+        text-align: center;
+    }
+    .mpc_desc {
+        margin: 20px auto;
+        text-align: center;
+    }
+    .mpc_button {
+        margin: 5px auto 0px;
+    }
+    .main_preview_content_right {
+       margin: 50px auto;
+    }
+    .slide_block {
+        flex-direction: column-reverse;
+    }
+    .mpc_button_green {
+        margin: 5px auto 0px;
+    }
+    .slide_block_2 {
+        flex-direction: column;
+    }
+    .mpc_button_mob {
+        display: block;
+    }
+    .mpc_button {
+        display: none;
+    }
+
+    .mpc_button_green_mob {
+        display: block;
+    }
+    .mpc_button_green {
+        display: none;
+    }
+}
+
+
+/* РАЗРЕШЕНИЕ НА 500px */
+
+@media (max-width: 500px) {
+    .nav_menu {
+        display: none;
+    }
+    .advert {
+        height: 550px;
+    }
+    .advert_slide_block {
+        flex-direction: column;
+        text-align: center;
+    }
+    .advert_preview_content {
+        margin: 50px auto;
+    }
+    .advert_preview_image {
+        margin: 20px auto;
+    }
+    .apc_desc {
+        margin: 20px auto;
+    }
+
+    .nav_menu_mob {
+        display: block;
+        margin: 10px 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .nav_menu_mob_image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* РАЗРЕШЕНИЕ НА 400px */
+
+@media (max-width: 400px) {
+    .main_preview_content {
+        width: 300px;
+    }
+    .logo {
+        margin: 0px 20px;
+    }
 }
