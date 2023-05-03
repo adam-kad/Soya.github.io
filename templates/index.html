@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,125 +20,237 @@
     <meta name="description" content="Одежда и товары к дополнения вашего стиля" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <!-- Assets -->
-    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
-    <script src="/js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="styles/app.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="styles/fonts.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="styles/slider.css" type="text/css" media="all" />
+    <script src="js/slider.js" defer></script>
 </head>
 <body>
     <section class="header">
         <div class="top_header">
-            <div class="logo">
-                <div class="logo_text">SOYA</div>
+            <nav class="logotype">
+                <div class="logo">
+                    <div class="logo_image"></div>
+                    <a class="home_link" href="#"></a>
+                </div>
+            </nav>
+            <div class="search">
+                <form class="search_form" action="#" method="post">
+                    <div class="search_image">
+                        <input class="search_input" type="text" name="search" id="headerSearch" placeholder="Введите для поиска">
+                    </div>
+                    <button class="search_button" type="submit"></button>
+                </form>
             </div>
+            <div class="navbar">
+                <div class="favourite_area">
+                    <a href="#">
+                        <img src="images/heart.svg" alt="">
+                    </a>
+                </div>
+                <div class="cart_area">
+                    <a href="#">
+                        <img src="images/bag.svg" alt=""> 
+                    </a>
+                </div>
+                <div class="user_login_info">
+                    <a href="#">
+                        <img src="images/user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="nav_menu_icon">
+                <img class="nav_menu_icon_image" src="images/menu_mob_button.png">
+            </div>
+        </div>
+
+        <div class="nav_menu_mob">
+            <div class="navbar_mob">
+                <div class="favourite_area nmm_area_mob">
+                    <a href="#">
+                        <img src="images/heart.svg" alt="">
+                    </a>
+                </div>
+                <div class="cart_area nmm_area_mob">
+                    <a href="#" id="essenceCartBtn">
+                        <img src="images/bag.svg" alt=""> 
+                    </a>
+                </div>
+                <div class="user_login_info nmm_area_mob">
+                    <a href="#">
+                        <img src="images/user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_header">
             <div class="nav_menu">
-                <a class="nav_menu_button product">Товары</a>
-                <a class="nav_menu_button basket">Корзина</a>
-                <a class="nav_menu_button account">Аккаунт</a>
-            </div>
-            <div class="nav_menu_mob">
-                <img class="nav_menu_mob_image" src="images/menu_mob_button.png">
-            </div>
+                    <a class="nav_menu_button product">
+                        <img src="images/icons/odejda.png">Одежда
+                    </a>
+                    <a class="nav_menu_button product">
+                        <img src="images/icons/kross.png">Обувь
+                    </a>
+                    <a class="nav_menu_button product">
+                        <img src="images/icons/noutbook.png">Электроника
+                    </a>
+                    <a class="nav_menu_button account">
+                        <img src="images/icons/kontakti.png">Контакты
+                    </a>
+                    <a class="nav_menu_button basket">
+                        <img src="images/icons/about.png">О нас
+                    </a>
+                </div>
         </div>
     </section>
 
     <section class="main">
         <div class="top_main">
-            <div class="main_preview top_maon_border">
-                <div class="main_preview_content">
-                    <h1 class="mpc_text">Поможем подобрать одежду под ваш стиль!</h1>
-                    <div class="mpc_desc">Худи, футболки, кроссовки и многое другое у нас на сайте. Скидка <b class="discount">10%</b> при первой покупке!</div>
-                    <div class="mpc_button">
-                        <a class="mpc_linc">ПЕРЕЙТИ</a>
-                    </div>
-                </div>
-                <div class="main_preview_image">
-                    <img class='mp_image preview_image' src="images/preview_image_soya.png">
-                    <div class="mpc_button_mob">
-                        <a class="mpc_linc">ПЕРЕЙТИ</a>
-                    </div>
-                </div>
-            </div>
-            <div class="main_block_1">
-                <div class="slide_block top_maon_border">
-                    <div class="main_preview_image">
-                        <img class='mp_image' src="images/hudy.png">
-                        <div class="mpc_button_green_mob">
-                            <a class="mpc_linc">ПЕРЕЙТИ</a>
+
+            <div class="face_container">
+                <div class="face_body">
+                    <div class="face_content">
+                        <div class="face_content_descr">
+                            <h6 class="face_content_collection">кроссовки</h6>
+                            <h2 class="face_content_text">Новая коллекция</h2>
+                            <a class="face_content_button" href="#">посмотреть</a>
                         </div>
                     </div>
-                    <div class="main_preview_content main_preview_content_right">
-                        <h1 class="mpc_text">Худи, толстовки</h1>
-                        <div class="mpc_desc">Фигня какая-то бла бал вадвадвавад ш3ащ34а вцлацда лакьуа тут описание типо худи алалалла</div>
-                        <div class="mpc_desc">Фигня кцда лакьуа тут описание типо худи алалflmdfkljvl kvwlkfjwlf wlejwl;ek;ecewc jewjefnejfnjefne алла</div>
-                        <div class="mpc_button_green">
-                            <a class="mpc_linc_green">ПЕРЕЙТИ</a>
-                        </div>
+                    <div class="face_body_image">
+                        <img class="fbi_image" src="images/krossovky.png">
                     </div>
                 </div>
             </div>
-            <div class="main_block_2">
-                <div class="slide_block top_maon_border slide_block_2">
-                    <div class="main_preview_content">
-                        <h1 class="mpc_text">Кроссовки</h1>
-                        <div class="mpc_desc">Фигня какая-то бла бал вадвадвавад ш3ащ34а вцлацда лакьуа тут описание типо худи алалалла</div>
-                        <div class="mpc_desc">Другок что-то wlf wlejwl;ek;ecewc jewjefnejfnjefne алла</div>
-                        <div class="mpc_button">
-                            <a class="mpc_linc">ПЕРЕЙТИ</a>
+
+            <div class="top_catagory">
+                <div class="catagory_container">
+                    <div class="tc_product">
+                        <img class="tcp_image" src="images/hudy.png">
+                        <div class="tcp_text">
+                            <a class="tcp_link" href="#">худи</a>
                         </div>
                     </div>
-                    <div class="main_preview_image">
-                        <img class='mp_image' src="images/krossovky.png">
-                        <div class="mpc_button_mob">
-                            <a class="mpc_linc">ПЕРЕЙТИ</a>
+                    <div class="tc_product">
+                        <img class="tcp_image" src="images/futbolka.png">
+                        <div class="tcp_text">
+                            <a class="tcp_link" href="#">футболки</a>
+                        </div>
+                    </div>
+                    <div class="tc_product">
+                        <img class="tcp_image" src="images/krossovky.png">
+                        <div class="tcp_text">
+                            <a class="tcp_link" href="#">кроссовки</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="advert">
-                <div class="advert_slide_block top_maon_border">
-                    <div class="advert_preview_content">
-                        <h1 class="apc_text">Беспроводные наушники</h1>
+            <div class="sale_container">
+                <div class="sale_body">
+                    <div class="sale_body_image">
+                        <img class="si_image" src="images/sale.png">
                     </div>
-                    <div class="advert_preview_image">
-                        <img class='ap_image' src="images/naushniki.png">
-                    </div>
-                    <div class="apc_desc">
-                        <disc class="apc_discount">Скидка</disc> 
-                        <b class="advert_percent">-15%</b>
-                        <disc class="apc_desc_text"> при первой покупке</disc>
+                    <div class="sale_product">
+                        <div class="sale_content_descr">
+                            <h6 class="sale_content_collection">-30%</h6>
+                            <h2 class="sale_content_text">Расспродажа</h2>
+                            <a class="sale_content_button" href="#">перейти</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="main_block_3">
-                <div class="slide_block top_maon_border">
-                    <div class="main_preview_image">
-                        <img class='mp_image' src="images/futbolka.png">
-                        <div class="mpc_button_mob">
-                            <a class="mpc_linc">ПЕРЕЙТИ</a>
+            <div class="popular_container">
+                <div class="popular_body">
+                    <div class="popular_text">Популярные товары</div>
+                    <div class="popular_content">
+                        <div class="pc_product">
+                            <a class="pc_link">перейти</a>
+                            <img class="pc_image" src="images/popular/kross_1.png">
+                            <div class="pc_descr">кроссовки</div>
+                            <div class="pc_text">Кроссовки New Balance 530 New Balance 574</div>
+                            <div class="pc_like">
+                                <img class="pc_like_image" src="images/heart.svg">
+                            </div>
+                            <div class="pc_price">
+                                <div class="pc_price_old">2200 руб</div>
+                                <div class="pc_price_new">1700 руб</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="main_preview_content">
-                        <h1 class="mpc_text">Футболки</h1>
-                        <div class="mpc_desc">Фигня какая-то бла бал вадвадвавад ш3ащ34а вцлацда лакьуа тут описание типо худи алалалла</div>
-                        <div class="mpc_desc">Другок что-то wlf wlejwl;ek;ecewc jewjefnejfnjefne алла</div>
-                        <div class="mpc_button">
-                            <a class="mpc_linc">ПЕРЕЙТИ</a>
+                        <div class="pc_product">
+                            <a class="pc_link">перейти</a>
+                            <img class="pc_image" src="images/popular/kross_2.png">
+                            <div class="pc_descr">кроссовки</div>
+                            <div class="pc_text">Кроссовки New Balance 530 New Balance 574</div>
+                            <div class="pc_like">
+                                <img class="pc_like_image" src="images/heart.svg">
+                            </div>
+                            <div class="pc_price">
+                                <div class="pc_price_old">1750 руб</div>
+                                <div class="pc_price_new">1500 руб</div>
+                            </div>
+                        </div>
+                        <div class="pc_product">
+                            <a class="pc_link">перейти</a>
+                            <img class="pc_image" src="images/popular/kross_3.png">
+                            <div class="pc_descr">кроссовки</div>
+                            <div class="pc_text">Кроссовки New Balance 530 New Balance 574</div>
+                            <div class="pc_like">
+                                <img class="pc_like_image" src="images/heart.svg">
+                            </div>
+                            <div class="pc_price">
+                                <div class="pc_price_old"></div>
+                                <div class="pc_price_new">1250 руб</div>
+                            </div>
+                        </div>
+                        <div class="pc_product">
+                            <a class="pc_link">перейти</a>
+                            <img class="pc_image" src="images/krossovky.png">
+                            <div class="pc_descr">кроссовки</div>
+                            <div class="pc_text">Кроссовки New Balance 530 New Balance 574</div>
+                            <div class="pc_like">
+                                <img class="pc_like_image" src="images/heart.svg">
+                            </div>
+                            <div class="pc_price">
+                                <div class="pc_price_old"></div>
+                                <div class="pc_price_new">2900 руб</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section class="footer">
         <div class="top_footer">
-            <div class="top_maon_border">
-                <div class="footer_content">
-                    <h1 class="fc_text">Наш канал в <a class="telegram_link">телеграм</a></h1>
-                    <div class="fc_desc">Скидки и промокоды на товары каждый день!</div>
+            <div class="footer_navbar">
+                <div class="footer_logo">SOYA</div>
+                <div class="footer_menu">
+                    <a class="fm_button">Товары</a>
+                    <a class="fm_button">Контакты</a>
+                    <a class="fm_button">О нас</a>
+                </div>
+            </div>
+            <div class="footer_container">
+                <div class="footer_ceo">
+                    <a class="f_ceo_button">
+                        <img class="f_ceo_image" src="images/ceo/instagram.png">
+                    </a>
+                    <a class="f_ceo_button">
+                        <img class="f_ceo_image" src="images/ceo/telegram.png">
+                    </a>
+                    <a class="f_ceo_button">
+                        <img class="f_ceo_image" src="images/ceo/twitter.png">
+                    </a>
+                    <a class="f_ceo_button">
+                        <img class="f_ceo_image" src="images/ceo/youtube.png">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 </body>
+</html>
